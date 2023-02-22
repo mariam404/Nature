@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'PT Serif', serif;
+}
+main{
+    height: 85vh;
+}
+.navbar{
+    opacity: .9;
+}
+.navbar-brand{
+    transition: .3s;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px rgb(27, 26, 26),
+                -10px -10px 20px rgb(29, 29, 29);
+}
+.carousel-image1, .carousel-image2, .carousel-image3, .carousel-image4{
+    height: 85vh;
+    background-size: cover;
+    width: 100%;
+}
+.carousel-image1{
+    background: #fff url(../images/background03.png) no-repeat center;
+}
+.carousel-image2{
+    background: #fff url(../images/background02.png) no-repeat center;
+}
+.carousel-image3{
+    background: #fff url(../images/background01.png) no-repeat center;
+}
+.carousel-image4{
+    background: #fff url(../images/background04.png) no-repeat center;
+}
+.carousel-item{
+    position: relative;
+}
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35%);
+}
+section{
+    position: relative;
+    min-height: 30vh;
+}
+.title{
+    position: relative;
+    padding: 1rem 0;
+    margin: 2rem 0 !important;
+}
+.title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: .1rem;
+    background-color: #212529;
+}
+.title:before{
+    content: '';
+    position: absolute;
+    bottom: -.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4rem;
+    height: .5rem;
+    border-radius: 10rem;
+    background-color: #212529;
+}
+.accordion-button{
+    font-size: 1.3rem;
+}
+.accordion-body{
+    font-size: 1.1rem;
+}
+.btnbefo{
+    position: relative;
+    float: right;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent rgb(255, 255, 255) transparent;
+top: 20px;
+right: 5px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 25px;
+width: 90px;
+background-color: rgb(255, 255, 255);
+top: 40px;
+right: -30px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btnbefo:hover::after{
+    content: "copy tips";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.pannerimg1{
+    background-image: url(../images/panner1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    margin: 20px 0;
+}
+.pannerimg2{
+    background-image: url(../images/panner2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    margin: 20px 0;
+}
+.follow .card{
+    position: relative;
+}
+.follow .card .card-body img{
+    position: relative;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 1rem;
+}
+.follow .card .card-body a{
+    color: #fff;
+    transition: .3s;
+}
+.follow .card .card-body a:hover{
+    letter-spacing: 1px;
+}
+.footerp{
+    margin-bottom: 0 !important;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+
+    html{
+        font-size: 80%;
+    }
+    .carousel-caption{
+        transform: translateY(-20%);
+    }
+}
+@media (max-width:780) {
+    html{
+        font-size: 70%;
+    }
+}
+@media (max-width:400px){
+    html{
+        font-size: 60%;
+    }
+    .carousel-caption{
+        transform: translateY(-19%);
+    }
+
+}
+
